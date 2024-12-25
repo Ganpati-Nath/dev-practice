@@ -10,3 +10,9 @@ let getMultiple = function(a, b) {
     return a*b;
 }
 console.log(getMultiple(5, 3));
+
+const exponentialFunction = (x, y) => {
+    return x**y;
+}
+
+console.log(exponentialFunction(2, 5));
