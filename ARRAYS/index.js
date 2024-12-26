@@ -1,12 +1,12 @@
-// let obj = {
-//     name : "Name",
-//     age : 25,
-//     weight : "85 kg",
-//     height : "6 ft 1 inch",
-//     greet : () => {
-//         console.log("Done");
-//     }
-// };
+let obj = {
+    name : "Name",
+    age : 25,
+    weight : "85 kg",
+    height : "6 ft 1 inch",
+    greet : () => {
+        console.log("Done");
+    }
+};
 // console.log(obj);
 // obj.greet();
 
@@ -54,9 +54,17 @@ let arr = [10, 20, 30, 11, 51, 33];
 
 // let ans = arr.sort((a, b) => b - a);
 
-arr.forEach((val, idx) => {
-    console.log("Number : ", val, " Index : ", idx);
-})
+// arr.forEach((val, idx) => {
+//     console.log("Number : ", val, " Index : ", idx);
+// })
 
 // console.log(ans);
 // console.log(typeof(ans));
+
+for(let key in obj) {
+    console.log(key, " ", obj[key]);
+}
+
+for(let val of arr) {
+    console.log(val);
+}
