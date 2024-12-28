@@ -35,9 +35,22 @@ const option = {
 };
 
 async function getData() {
-    const res = await fetch(url, option);
+    let res = await fetch(url);
     let data = await res.json();
-    console.log("My data : ", data);
+    console.log("GET My data : ", data);
 }
 
-getData();
+async function postData() {
+    const res = await fetch(url, option);
+    let data = await res.json();
+    console.log("POST My data : ", data);
+}
+
+// postData();
+
+async function processData() {
+    await postData();
+    await getData();
+}
+
+processData();
